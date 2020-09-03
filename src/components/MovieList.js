@@ -4,12 +4,10 @@ import Movie from './Movie'
 const MovieList = (props) => {
   console.log(props.movies)
   return (
-    <div>
-      {props.movies.map((movie, i) => {
-        return (
-          <Movie key={i} image={movie.Poster} movie={movie} />
-        )
-      }
+    <div className='cards'>
+      {props.movies.map((movie, i) => (
+        <Movie key={i} movie={movie} />
+      )
       )}
     </div>
   )
