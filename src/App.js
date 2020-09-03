@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header'
 import SearchBar from './components/SearchBar'
 import './App.css';
+import MovieList from './components/MovieList'
 
 class App extends React.Component {
 
@@ -32,6 +33,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <SearchBar handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
+        <MovieList movies={this.state.movies} />
       </div>
     )
   }
