@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header>
-      <h1>The Shoppies Movie Nominations</h1>
+    <header className="header">
+      <h2>The Shoppies Movie Nominations</h2>
     </header>
   )
 }
